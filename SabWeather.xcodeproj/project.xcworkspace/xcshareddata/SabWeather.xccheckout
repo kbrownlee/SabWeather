@@ -10,43 +10,31 @@
 	<string>SabWeather</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>49F1D975258430638DEA539AF52CE1A63ADF04C1</key>
-		<string>https://bitbucket.org/sabminder/zapp_weatherapp.git</string>
-		<key>79E58885-6D93-4226-9216-0B897E87F199</key>
-		<string>https://bitbucket.org/sabminder/zapp_weatherapp.git</string>
+		<key>6B5A39B8A5E627E1C57241F00263ED72B4957192</key>
+		<string>https://github.com/kbrownlee/SabWeather.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SabWeather/SabWeather.xcodeproj</string>
+	<string>SabWeather.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>49F1D975258430638DEA539AF52CE1A63ADF04C1</key>
-		<string>../../..</string>
-		<key>79E58885-6D93-4226-9216-0B897E87F199</key>
-		<string>../../../../WeatherApp</string>
+		<key>6B5A39B8A5E627E1C57241F00263ED72B4957192</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://bitbucket.org/sabminder/zapp_weatherapp.git</string>
+	<string>https://github.com/kbrownlee/SabWeather.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>49F1D975258430638DEA539AF52CE1A63ADF04C1</string>
+	<string>6B5A39B8A5E627E1C57241F00263ED72B4957192</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>79E58885-6D93-4226-9216-0B897E87F199</string>
+			<string>6B5A39B8A5E627E1C57241F00263ED72B4957192</string>
 			<key>IDESourceControlWCCName</key>
-			<string>WeatherApp</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>49F1D975258430638DEA539AF52CE1A63ADF04C1</string>
-			<key>IDESourceControlWCCName</key>
-			<string>ZappWeatherApp</string>
+			<string>SabWeather</string>
 		</dict>
 	</array>
 </dict>
