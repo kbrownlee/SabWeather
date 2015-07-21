@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  SabWeather
+
+  Created by Szabolcs Sztányi on 2013.06.17..
+  Copyright (c) 2013 ZappDesignTemplates. All rights reserved.
+*/
+
+// Main view
+"LOADING_WEATHER_HUD" = "Időjárási adatok töltése";
+"GETTING_LOCATION_HUD" = "Jelenlegi helyzet betöltése";
+
+// Locations view
+"LOCATIONS_TITLE" = "Helyek";
+"CURRENT_LOCATION_TITLE" = "Jelenlegi helyzet";
+"OTHER_LOCATIONS_TITLE" = "Egyéb helyek";
+
+// Settings
+"SETTINGS_VIEW_TITLE" = "Beállítások";
+"MANAGE_LOCATIONS" = "Helyzetek szerkesztése";
+"TEMPERATURE" = "Hőmérséklet";
+"CHANGE_THEME" = "Válts témát";
+"ORANGE" = "Narancs";
+"DARK" = "Sötét";
+"LIGHT" = "Világos";
+
+// Weather View
+"HIGH" = "M:";
+"LOW" = "A:";
+
+"Ok" = "Ok";
+"error_occured" = "Hiba történt";
+"no_internet" = "Nincs internetkapcsolat.";

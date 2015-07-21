@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  SabWeather
+
+  Created by Szabolcs Sztányi on 2013.06.17..
+  Copyright (c) 2013 ZappDesignTemplates. All rights reserved.
+*/
+
+// Main view
+"LOADING_WEATHER_HUD" = "Loading weather info";
+"GETTING_LOCATION_HUD" = "Getting current location";
+
+// Locations view
+"LOCATIONS_TITLE" = "Locations";
+"CURRENT_LOCATION_TITLE" = "Current Location";
+"OTHER_LOCATIONS_TITLE" = "Other Locations";
+
+// Weather View
+"HIGH" = "H:";
+"LOW" = "L:";
+
+"Ok" = "Ok";
+"error_occured" = "Error occured";
+"no_internet" = "No internet connection available.";

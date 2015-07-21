@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="RyB-3e-KkQ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="YcK-Lf-Ja6">
+            <objects>
+                <viewController id="RyB-3e-KkQ" customClass="MainViewController" customModule="SabWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jRD-1c-BjY"/>
+                        <viewControllerLayoutGuide type="bottom" id="DcE-Ev-mn8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4hg-N1-mEj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTF-N7-3kb">
+                                <rect key="frame" x="69" y="60" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="dG7-tX-cey"/>
+                                    <constraint firstAttribute="height" constant="90" id="uTI-22-fTC"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="S60-W7-qox">
+                                <rect key="frame" x="0.0" y="230" width="320" height="338"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WeatherCell" rowHeight="61" id="tTZ-e2-Dfu" customClass="WeatherCell" customModule="SabWeather" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="61"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tTZ-e2-Dfu" id="75e-CN-DiE">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MONDAY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="107" translatesAutoresizingMaskIntoConstraints="NO" id="kxN-77-ZxG">
+                                                    <rect key="frame" x="15" y="8" width="107" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="2J1-e2-oOY"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="AUG 10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="107" translatesAutoresizingMaskIntoConstraints="NO" id="HSa-6m-rYf">
+                                                    <rect key="frame" x="15" y="31" width="107" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="5xh-Vo-RA1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="23 20" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="69" translatesAutoresizingMaskIntoConstraints="NO" id="uac-CN-bwX">
+                                                    <rect key="frame" x="220" y="0.0" width="80" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="HeJ-1q-wbQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="QLp-cA-LcK">
+                                                    <rect key="frame" x="132" y="8" width="56" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="56" id="4Ci-d6-d7l"/>
+                                                        <constraint firstAttribute="height" constant="44" id="Y4h-23-W5d"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QLp-cA-LcK" firstAttribute="leading" secondItem="HSa-6m-rYf" secondAttribute="trailing" constant="10" id="1OQ-om-g2h"/>
+                                                <constraint firstAttribute="centerX" secondItem="QLp-cA-LcK" secondAttribute="centerX" id="4BF-yz-ks6"/>
+                                                <constraint firstItem="QLp-cA-LcK" firstAttribute="leading" secondItem="kxN-77-ZxG" secondAttribute="trailing" constant="10" id="8yW-Ni-Rfb"/>
+                                                <constraint firstItem="uac-CN-bwX" firstAttribute="top" secondItem="75e-CN-DiE" secondAttribute="top" id="Ffe-s2-pv8"/>
+                                                <constraint firstItem="HSa-6m-rYf" firstAttribute="leading" secondItem="75e-CN-DiE" secondAttribute="leading" constant="15" id="HWC-Zx-yBW"/>
+                                                <constraint firstItem="uac-CN-bwX" firstAttribute="leading" secondItem="QLp-cA-LcK" secondAttribute="trailing" constant="32" id="Jof-5g-DkY"/>
+                                                <constraint firstItem="kxN-77-ZxG" firstAttribute="leading" secondItem="75e-CN-DiE" secondAttribute="leading" constant="15" id="QdL-Bb-VS4"/>
+                                                <constraint firstItem="kxN-77-ZxG" firstAttribute="top" secondItem="75e-CN-DiE" secondAttribute="top" constant="8" id="Zg9-N1-kLe"/>
+                                                <constraint firstItem="QLp-cA-LcK" firstAttribute="top" secondItem="75e-CN-DiE" secondAttribute="topMargin" id="ixN-HH-S8K"/>
+                                                <constraint firstAttribute="trailing" secondItem="uac-CN-bwX" secondAttribute="trailing" constant="20" id="lV9-ae-uPF"/>
+                                                <constraint firstItem="HSa-6m-rYf" firstAttribute="top" secondItem="kxN-77-ZxG" secondAttribute="bottom" constant="2" id="qPO-iC-Wh2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="HSa-6m-rYf" id="1qh-0t-zJE"/>
+                                            <outlet property="dayLabel" destination="kxN-77-ZxG" id="PbP-NV-ZnS"/>
+                                            <outlet property="iconImageView" destination="QLp-cA-LcK" id="SS6-kM-YXU"/>
+                                            <outlet property="temperatureLabel" destination="uac-CN-bwX" id="wSz-et-mna"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="RyB-3e-KkQ" id="5vF-8y-Bfw"/>
+                                    <outlet property="delegate" destination="RyB-3e-KkQ" id="idd-F3-9E4"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="THIS THE FUCKIN' WEATHAAAA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="170" translatesAutoresizingMaskIntoConstraints="NO" id="uki-qb-hFq" userLabel="city label" customClass="ThemeChangerLabel" customModule="SabWeather" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="30" width="320" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="W0t-X5-GoV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="°C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="34" translatesAutoresizingMaskIntoConstraints="NO" id="UNY-bi-dMh" userLabel="temperature format label" customClass="ThemeChangerLabel" customModule="SabWeather" customModuleProvider="target">
+                                <rect key="frame" x="235" y="60" width="25" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Acb-3b-gJv"/>
+                                    <constraint firstAttribute="width" constant="25" id="GVh-Ph-t6X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="aCz-fc-1ps" userLabel="temperature label" customClass="ThemeChangerLabel" customModule="SabWeather" customModuleProvider="target">
+                                <rect key="frame" x="179" y="60" width="56" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="mm4-zR-Qvp"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="q9c-sG-Gqg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="100"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="S60-W7-qox" secondAttribute="trailing" id="8Yc-Rm-ree"/>
+                            <constraint firstItem="S60-W7-qox" firstAttribute="top" secondItem="jRD-1c-BjY" secondAttribute="bottom" constant="210" id="A8w-f5-nlA"/>
+                            <constraint firstItem="UNY-bi-dMh" firstAttribute="top" secondItem="uki-qb-hFq" secondAttribute="bottom" constant="10" id="AwQ-Ik-lXn"/>
+                            <constraint firstItem="aCz-fc-1ps" firstAttribute="top" secondItem="UNY-bi-dMh" secondAttribute="top" id="LQK-Qb-khR"/>
+                            <constraint firstItem="aCz-fc-1ps" firstAttribute="leading" secondItem="yTF-N7-3kb" secondAttribute="trailing" constant="20" id="LTL-EV-1Hh"/>
+                            <constraint firstItem="aCz-fc-1ps" firstAttribute="top" secondItem="jRD-1c-BjY" secondAttribute="bottom" constant="40" id="ObE-57-hlJ"/>
+                            <constraint firstItem="uki-qb-hFq" firstAttribute="leading" secondItem="4hg-N1-mEj" secondAttribute="leading" id="TiV-jQ-aT8"/>
+                            <constraint firstItem="S60-W7-qox" firstAttribute="leading" secondItem="4hg-N1-mEj" secondAttribute="leading" id="Wlk-Sr-syz"/>
+                            <constraint firstItem="UNY-bi-dMh" firstAttribute="leading" secondItem="aCz-fc-1ps" secondAttribute="trailing" id="fA3-YF-E0S"/>
+                            <constraint firstAttribute="trailing" secondItem="uki-qb-hFq" secondAttribute="trailing" id="kIu-81-HZ9"/>
+                            <constraint firstItem="DcE-Ev-mn8" firstAttribute="top" secondItem="S60-W7-qox" secondAttribute="bottom" id="oUw-4b-5aB"/>
+                            <constraint firstItem="aCz-fc-1ps" firstAttribute="centerY" secondItem="yTF-N7-3kb" secondAttribute="centerY" id="zXj-Qn-4ky"/>
+                            <constraint firstAttribute="centerX" secondItem="aCz-fc-1ps" secondAttribute="centerX" constant="-47" id="zqj-QH-EIE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="uki-qb-hFq" id="8rp-XL-I3S"/>
+                        <outlet property="daysTableView" destination="S60-W7-qox" id="M5C-yd-87c"/>
+                        <outlet property="tempFormatLabel" destination="UNY-bi-dMh" id="Pkh-0z-5C0"/>
+                        <outlet property="temperatureLabel" destination="aCz-fc-1ps" id="wFj-1E-SZq"/>
+                        <outlet property="weatherIcon" destination="yTF-N7-3kb" id="oG3-4B-YC9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FK0-AK-myY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-674" y="170"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
